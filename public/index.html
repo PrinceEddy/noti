@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KMET Notifications</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    :root {
+      --primary-blue: #1E3A8A;
+      --accent-yellow: #FFD700;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f8fafc;
+    }
+    .header {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-yellow) 100%);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .btn {
+      background: var(--primary-blue);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+  </style>
+</head>
+<body class="bg-gradient-to-r from-[var(--primary-blue)] to-[var(--accent-yellow)] text-white flex items-center justify-center min-h-screen p-6">
+<div class="bg-white text-gray-900 p-10 rounded-3xl shadow-2xl max-w-md w-full text-center border border-gray-200">
+  <img src="kmet logo.PNG" alt="KMET Logo" class="mx-auto mb-6 w-32 h-32 object-contain"> <!-- KMET Logo -->
+  <strong><h1 class="text-3xl font-extrabold mb-4 text-[var(--primary-blue)]">KMET Notification Service</h1></strong>
+   <strong><p class="text-gray-700 mb-6 text-lg">Stay informed with real-time updates from KMET. Click below to enable notifications.</p></strong>
+  <div id="status">Loading...</div>
+  
+  <strong><h3>Subscribe to:</h3>
+  <label><input type="checkbox" id="news"> News</label><br>
+  <label><input type="checkbox" id="updates"> Updates</label><br></strong>
+  
+  <button id="notify-btn" class="bg-[var(--accent-yellow)] hover:bg-[var(--primary-blue)] text-black font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg text-lg" id="subscribe">Subscribe</button>
+  <button id="notify-btn" class="bg-[var(--accent-yellow)] hover:bg-[var(--primary-blue)] text-black font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg text-lg" id="unsubscribe">Unsubscribe</button>
+
+  <script src="app.js"></script>
+  </div>
+</body>
+</html>
